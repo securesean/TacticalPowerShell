@@ -167,7 +167,7 @@ import-csv -Path .\autorunOutput.csv | Out-GridView
 
 And we can also use `Group-Object` and `Sort-Object` to print most common Persistence locations:
 ```PowerShell
-$data | Group-Object "Entry Location" -NoElement | Sort-Object Count -Descending
+import-csv -Path .\autorunOutput.csv | Group-Object "Entry Location" -NoElement | Sort-Object Count -Descending
 ```
 
 Now say you want to investigate each entry on this list we can wrap a while true loop while selecting one or more things from the `Out-GridView` at a time. We can do that with the script below (also in `Demo-CSV.ps1`) to pipe my `Out-GridView` selection to a clipboard, and re-launch/re-populate the list without our selection:
