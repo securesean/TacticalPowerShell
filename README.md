@@ -1,32 +1,51 @@
-# Quick Tactical Cyber Commands
-PowerShell can be incredibly useful for more on-host hand-to-hand combat for events like CCDC. This is a little crash course in how to leverage PowerShell when working with a compromised Windows system. We will start with the simple examples and work our way up.
+# Quick Tactical PowerShell ⚔️
 
-[Lesson 1 - Out-GridView, Group-Object, Sort-Object, CSV](Out-GridView-Group-Sort.md)
+PowerShell is a powerful asset for on-host incident response and more "hand-to-hand combat" during events like CCDC. This repository provides a focused crash course on leveraging PowerShell for compromised Windows systems, starting with fundamental techniques and progressing to more advanced tactics.
 
-See [OneLiners for just the code](OutGrid_Oneliners.ps1) and [better classes here](Demo-CSV.ps1) 
+## 🚀 Lessons
 
+### 1. Data Wrangling: Out-GridView, Group-Object, Sort-Object & CSV Kung Fu 🥋
 
-[Lesson 2 - Json, Compare-Object](Import-Json-Compare-Object.md)
+Master the art of data manipulation with these essential cmdlets.
 
+*   **Learn:** [Out-GridView-Group-Sort.md](Out-GridView-Group-Sort.md)
+*   **Code Snippets:** [OutGrid\_Oneliners.ps1](OutGrid\_Oneliners.ps1)
+*   **Advanced Examples:** [Demo-CSV.ps1](Demo-CSV.ps1)
 
-[Lesson 3 - Register-ObjectEvent, Jobs (Not Ready)](XXXXXXXXXXXXXX.md)
-- Watching Processes
-- Watching Folders
-- PS Remoting
+### 2. JSON & Comparison Magic: Import-Json & Compare-Object 🧙‍♂️
 
+Unlock the secrets of JSON parsing and object comparison for quick analysis.
 
-[Lesson 4 - Red Team Tatics (Not Ready)](XXXXXXX.md)
-- Create Local Users
-- Create a bind shell
-- Create a service
-- Malware Auto-start locations
+*   **Dive In:** [Import-Json-Compare-Object.md](Import-Json-Compare-Object.md)
 
+### 3. Real-time Monitoring: Register-ObjectEvent & Asynchronous Jobs ⏱️ (Under Development)
 
-[Lesson 5 - Misc Tools (Not Ready)](XXXXXXX.md)
-- SysInterals
-- https://attack.mitre.org/
-- bluespawn
-- aurora - https://www.nextron-systems.com/aurora/
-- PowerToys - OCR snipet
-- WinGet
-- RMM's 
+Harness the power of event-driven automation and background tasks.
+
+*   Watching Processes
+*   Watching Folders
+*   PS Remoting
+
+### 4. Red Team Tactics: Offensive PowerShell 😈 (Under Development)
+
+Explore techniques for simulating adversary actions (use responsibly!).
+
+*   Create Local Users
+*   Create a Bind Shell
+*   Create a Service
+
+### 5. Swiss Army Knife: Miscellaneous Tools 🛠️ (Under Development)
+
+A collection of useful utilities and resources for cyber operations.
+
+*   SysInternals Suite
+*   MITRE ATT&CK Framework: [https://attack.mitre.org/](https://attack.mitre.org/)
+*   Bluespawn
+*   Aurora: [https://www.nextron-systems.com/aurora/](https://www.nextron-systems.com/aurora/)
+*   PowerToys (OCR Snippet)
+*   WinGet
+*   RMM Tools
+
+## Contributing
+
+Contributions are welcome! Feel free to submit pull requests or open issues to suggest improvements or new content.
