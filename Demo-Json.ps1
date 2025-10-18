@@ -30,7 +30,8 @@ while($true){
                     }
 
                     # Alert on suspicious modules (such as System.Management.Automation.dll for powershell)
-                    $suspiciousModules = $diff | Where-Object { $_.SideIndicator -eq "=>" -and $_.InputObject.FileName -match "System.Management.Automation.dll|dbghelp.dll|dbgcore.dll|BitsProxy.dll|VBE7.DLL|System.ComponentModel.Composition.ni.dll|wbemdisp.dll|fastprox.dll|Microsoft.WSMan.Management.dll" }
+                    # Exercise to a student: Find out why each of these Dll's are known to be suspicious and find others you can key off of
+                    $suspiciousModules = $diff | Where-Object { $_.SideIndicator -eq "=>" -and $_.InputObject.FileName -match "System.Management.Automation.dll|dbghelp.dll|dbgcore.dll|BitsProxy.dll|VBE7.DLL|System.ComponentModel.Composition.ni.dll|wbemdisp.dll|fastprox.dll|Microsoft.WSMan.Management.dll|CredUI.dll" }
                     if ($suspiciousModules.Count -gt 0){
                         Write-Output "Process $($proc.Name) ($($proc.Id)) loaded suspicious modules:"
                         $suspiciousModules | ForEach-Object { Write-Output "    $($_.InputObject.FileName)"  }
@@ -69,5 +70,6 @@ while($true){
 
     $baseline = $current
 }
+
 
 
