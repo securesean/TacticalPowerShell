@@ -31,6 +31,7 @@ PowerShell is a powerful asset for on-host incident response and more "hand-to-h
 
 A collection of useful utilities and resources for cyber operations.
 
+*   Get-Memer, [Show-Object](https://github.com/ulkaio/powershell-cookbook/blob/master/Show-Object.ps1)
 *   SysInternals Suite
 *   MITRE ATT&CK Framework: [https://attack.mitre.org/](https://attack.mitre.org/)
 *   Bluespawn
@@ -43,3 +44,4 @@ A collection of useful utilities and resources for cyber operations.
 
 
 Contributions are welcome! Feel free to submit pull requests or open issues to suggest improvements or new content.
+
